@@ -1,1 +1,6 @@
-This shows how Machine Learning can be used to detect a fake Bank notes and in this project I deployed this using Docker
+I trained a Random Forest model and built a classifier to differentiate a fake Bank Note using the features received from applying a Wavelet transform to the images.
+I used Flask Web Application Framework to deploy the trained model as a set of APIs that takes in numbers or a file as arguments and gives out output
+Then, I used Flasgger to create the basic UI so that it can accept the inputs from the browser and gives the outputs.
+I explored streamlit too, created few buttons and text input elements. Streamlit gave me much more freedom to include html code and other UI elements without writing them from scratch
+I used Continuumio Anaconda image from Docker Hub as a base docker image and added all the dependencies and created a docker image of the model. 
+Now, anyone can use the docker image and run this docker container to get the predictions
